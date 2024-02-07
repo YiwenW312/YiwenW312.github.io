@@ -29,6 +29,11 @@
     font-family: 'Cormorant-Regular', sans-serif;
     font-size: large;
   }
+
+  .active {
+    background-color: #000000;
+    color: #fff;
+  }
   
 
   .grid-container {
@@ -45,7 +50,7 @@
   .navbar {
     grid-area: navbar;
     background-color: #333;
-    padding: 15px;
+    padding: 2px;
     height: 100%;
     width: 100%;
     box-sizing: border-box;
