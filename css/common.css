@@ -14,6 +14,12 @@
     font-family: 'Cormorant-Regular';
     src: url('../font/Cormorant-Regular.ttf') format('truetype');
   }
+
+  @font-face {
+    font-family: 'Dolce Vita';
+    src: url('../font/Dolce Vita.ttf') format('truetype');
+  }
+  
   
   
 *, *::before, *::after {
@@ -74,6 +80,14 @@
     color: black;
   }
 
+  .navbar-title {
+    color: white; 
+    padding: 10px; 
+    margin: 0; 
+    font-size: 1.5em; 
+    text-align: center; 
+    font-family: 'Dolce Vita', sans-serif; 
+  }
   .header {
     grid-area: header;
     position: sticky;
