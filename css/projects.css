@@ -1,0 +1,13 @@
+.project a {
+    color: white;
+    text-decoration: none; 
+}
+
+.project a:hover {
+    text-decoration: underline; 
+}
+
+.project a, .project a:visited {
+    color: rgb(252, 249, 215);
+    text-decoration: none; 
+}
