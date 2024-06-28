@@ -16,14 +16,7 @@
     font-family: 'Seaside Resort NF';
     src: url('../fonts/Seaside_Resort_NF.ttf') format('truetype');
 }
-@font-face {
-    font-family: 'Cormorant-Regular';
-    src: url('../fonts/Cormorant-Regular.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'MontserratAlternates-BlackItalic';
-    src: url('../fonts/MontserratAlternates-BlackItalic.ttf') format('truetype');
-}
+
 @font-face {
     font-family: 'YesevaOne-Regular';
     src: url('../fonts/YesevaOne-Regular.ttf') format('truetype');
