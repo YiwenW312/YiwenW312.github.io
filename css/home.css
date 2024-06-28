@@ -1,0 +1,193 @@
+@import url('common.css');
+
+body {
+    padding-top: 150px; 
+}
+
+main {
+    position: relative; 
+    padding-top: 50px; 
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 1.8em;
+    color: rgb(93, 77, 123);
+    text-transform: uppercase; 
+    font-family: 'Poiret One';
+}
+
+h1-1 {
+    padding-left: 100px;
+    font-size: 2.5em;
+    color: rgb(93, 77, 123);
+    text-transform: uppercase;
+    font-family: 'YesevaOne-Regular';
+    position: relative;
+    z-index: 1;
+}
+
+main img {
+    max-width: 70%;
+    height: auto;
+    margin-top: -50px;
+    transform: translateX(50px); 
+    opacity: 0;
+    animation: fadeInMove 2s forwards; 
+}
+
+@keyframes fadeInMove {
+    from {
+        opacity: 0;
+        transform: translateX(0); 
+    }
+    to {
+        opacity: 1;
+        transform: translateX(50px); 
+    }
+}
+
+.watermark {
+    position: absolute;
+    top: -150px;
+    right: -225px;
+    width: 150%;
+    height: 150%;
+    background: url('../assets/YiwenWang_T.PNG') no-repeat right top;
+    background-size: contain; 
+    opacity: 0;
+    z-index: -1;
+    animation: fadeInWatermark 3s forwards;
+}
+
+@keyframes fadeInWatermark {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.1; 
+    }
+}
+
+p {
+    margin-bottom: 25px;
+    font-size: 1em; 
+    text-transform: none; 
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    animation-delay: 1s;
+    position: relative;
+    top: 50px;
+    text-align: left; 
+    padding: 10px;
+    transition: transform 0.3s ease;
+    color: rgb(93, 77, 123);
+    font-weight: 200;
+    z-index: 1; 
+}
+
+p:hover {
+    transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+p:nth-of-type(2) {
+    animation-delay: 2s;
+}
+
+p:nth-of-type(3) {
+    animation-delay: 3s;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: rgb(93, 77, 123);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rebeccapurple;
+}
+
+.link-button {
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 20px;
+    background-color: rgb(93, 77, 123);
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.link-button:hover {
+    background-color: rebeccapurple;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    body {
+        padding-top: 100px;
+        font-size: 1em;
+    }
+
+    main {
+        padding-top: 75px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    h1 {
+        padding-top:20px;
+        font-size: 1.5em;
+    }
+
+    h1-1 {
+        padding-left: 0;
+        font-size: 2em;
+    }
+
+    main img {
+        max-width: 90%;
+        transform: translateX(0);
+        margin-top: 20px;
+    }
+
+    .watermark {
+        top: -50px;
+        right: -140px;
+        width:100%;
+    }
+
+    p {
+        font-size: 0.9em;
+        padding: 5px;
+    }
+
+    .link-button {
+        font-size: 1em;
+    }
+}
