@@ -4,39 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me - Emelina's Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/about.css">
 </head>
 <body>
     <header>
         <img src="assets/logo.png" alt="Logo" class="logo">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="nav-text-container">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Yiwen's</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <aside>
-        <a href="mailto:emelina.neu@gmail.com"><img src="assets/email.png" alt="Email"></a>
-        <a href="https://www.linkedin.com/in/emelinaw/"><img src="assets/linkedin.png" alt="LinkedIn"></a>
-        <a href="https://github.com/YiwenW312"><img src="assets/github.png" alt="GitHub"></a>
-        <a href="assets/resume.pdf" download><img src="assets/document.png" alt="Resume"></a>
+        <a href="mailto:emelina.neu@gmail.com" data-hover="Email"><img src="assets/email.png" alt="Email"></a>
+        <a href="https://www.linkedin.com/in/emelinaw/" data-hover="LinkedIn"><img src="assets/linkedin.png" alt="LinkedIn"></a>
+        <a href="https://github.com/YiwenW312" data-hover="GitHub"><img src="assets/github.png" alt="GitHub"></a>
+        <a href="assets/Yiwen_Wang_Resume.pdf" download data-hover="Download Resume"><img src="assets/document.png" alt="Resume"></a>
     </aside>
     <main>
+        <h1-1>Software Engineer | Student Leader | Ph.D. in Law | AnitaB (GHC) Seattle Volunteer</h1-1>
         <h1>About Me</h1>
+        <p class="intro">
+            I grew up in Shanghai, China, and moved to Seattle, WA, to pursue a Ph.D. in Law at the University of Washington. During my years of legal studies, I rediscovered my interest in computers and envisioned the integration of technology into the legal field. This passion led me to the Computer Science Master's program at Northeastern University's Seattle campus.
+        </p>
+        <p class="intro">
+            Beyond my coursework, I founded Tech@Crossroads, a student organization dedicated to encouraging interdisciplinary exploration. This initiative not only merges my legal background with technology but also invites students from diverse fields to collaborate and share their expertise. Together, we work on projects that bridge the information gap between tech and non-tech students, fostering a community of innovation and shared learning.
+        </p>
+        <p class="intro">
+            As a problem solver, quick learner, and team player, I am eager to find a Software Engineer position where I can continue to grow and make an impact.
+        </p>
+        <img src="assets/yw1.JPG" alt="Watermark" class="watermark">
         <section>
             <h2>Education</h2>
-            <p>Details about your education.</p>
+            <div class="section-content">
+                <p><strong class="highlight">Northeastern University, Seattle, WA, 2023 - 2025</strong></p>
+                <p><em>Master of Science in Computer Science | GPA 4.0/4.0 | Exceptional Student Representative</em></p>
+                <p><strong class="highlight">University of Washington, Seattle, WA, 2014 - 2022</strong></p>
+                <p><em>Ph.D. in Law</em></p>
+                <img src="assets/yw8.JPG" alt="Watermark" class="block-watermark">
+            </div>
         </section>
         <section>
             <h2>Experience</h2>
-            <p>Details about your experience.</p>
+            <div class="section-content">
+                <p><strong class="highlight">Software Engineer Intern, Zhejiang Golden Webking Co., Ltd. – Remote</strong></p>
+                <p><em>Software Engineer Intern, Summer 2023</em></p>
+                <ul>
+                    <li>Developed a loyalty program management system using Java and Spring Boot, enhanced customer engagement by 30%.</li>
+                    <li>Seamlessly integrated the system with the e-commerce platform, using RESTful APIs and Hibernate to track customer purchases, allocate points, and facilitate reward redemption during checkout.</li>
+                </ul>
+                <img src="assets/yw2.JPG" alt="Watermark" class="block-watermark">
+            </div>
         </section>
         <section>
             <h2>Leadership</h2>
-            <p>Details about your leadership roles.</p>
+            <div class="section-content">
+                <p><strong class="highlight">Tech@Crossroads, Northeastern University – Seattle, WA</strong></p>
+                <p><em>President, Founder and Software Engineer, Fall 2023 - present</em></p>
+                <ul>
+                    <li>Founded and led this student organization with over 90 members, being most organized student organization in Seattle campus, hosting a LeetCode practice group, and the first & innovational student organization have its own student-led software development project team in both the Khoury college and Seattle campus.</li>
+                    <li>Demonstrated problem-solving and teamwork skills by initiating and leading the team, developing a full-stack inclusive publishing platform, using JavaScript for both frontend (React) and backend (Node.js & Express.js), with MongoDB as the database management; and this platform aims to filling the information gaps and helping students.</li>
+                </ul>
+                <img src="assets/TCmeeting.JPG" alt="Watermark" class="block-watermark">
+            </div>
         </section>
     </main>
 </body>

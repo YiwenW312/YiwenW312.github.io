@@ -37,7 +37,6 @@ body {
     font-family: 'ABeeZee-Regular';
     background-color: rgb(210, 182, 106);
     font-size: 1.2em;
-    text-transform: uppercase;
 }
 
 header {
@@ -131,6 +130,19 @@ aside a img {
     max-height: 30px; 
 }
 
+aside a:hover::after {
+    content: attr(data-hover);
+    position: absolute;
+    right: 40px; 
+    background-color: rgb(93, 77, 123);
+    color: rgb(230, 203, 115);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.7em;
+    white-space: nowrap;
+    z-index: 10;
+}
+
 /* Mobile responsiveness */
 @media (max-width: 768px) {
     body {
@@ -173,5 +185,10 @@ aside a img {
     aside a img {
         max-width: 20px;
         max-height: 20px;
+    }
+
+    aside a:hover::after {
+        right: auto;
+        left: 50px;
     }
 }
