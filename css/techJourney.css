@@ -12,6 +12,12 @@
     margin-bottom: 40px;
 }
 
+.experience-section p{
+    font-size: 1em;
+    color: rgb(93, 77, 123);
+    margin-bottom: 30px;
+}
+
 .experience {
     background-color: rgba(255, 255, 255, 0.3); 
     padding: 20px;
@@ -38,7 +44,7 @@
 .experience h4,
 .experience ul {
     position: relative;
-    z-index: 2; /* Place above the watermark image */
+    z-index: 2; 
     font-family: 'Times New Roman', serif;
 }
 
