@@ -112,6 +112,10 @@ p:nth-of-type(3) {
     animation-delay: 3s;
 }
 
+p:nth-of-type(4) {
+    animation-delay: 4s;
+}
+
 button {
     display: block;
     width: 100%;
