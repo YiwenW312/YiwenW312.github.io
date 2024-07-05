@@ -1,0 +1,67 @@
+/* General styles */
+.skills-section {
+    padding: 100px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skills-section h1 {
+    font-family: 'YesevaOne-Regular', serif;
+    font-size: 2.5em;
+    color: rgb(93, 77, 123);
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.skill-category {
+    margin-bottom: 20px;
+}
+
+.skill-category h2 {
+    font-family: 'Times New Roman', serif;
+    font-size: 1.8em;
+    margin-top: 50px;
+    font-weight: bold;
+    color: rgb(93, 77, 123);
+    margin-bottom: 20px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tag {
+    background-color: rgb(251, 251, 251, 0.1);
+    color: rgb(93, 77, 123);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: 'ABeeZee-Regular';
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.tag:hover {
+    background-color: rgba(93, 77, 123, 0.2);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .skills-section {
+        padding: 80px 20px;
+    }
+
+    .skills-section h1 {
+        font-size: 2em;
+    }
+
+    .skill-category h2 {
+        font-size: 1.5em;
+    }
+
+    .tag {
+        font-size: 0.9em;
+        padding: 5px 8px;
+    }
+}
