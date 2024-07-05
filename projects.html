@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - Emelina's Portfolio</title>
+    <title>Yiwen's Projects</title>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/projects.css">
 </head>
+
 <body>
     <header>
         <img src="assets/logo.png" alt="Logo" class="logo">
@@ -16,7 +18,8 @@
                     <li><a href="index.html">Welcome</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="projects.html" class="active">Projects</a></li>
-                    <li><a href="techJourney.html">Tech Journey</a></li>
+                    <li><a href="techJourney.html">Experience</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -28,7 +31,45 @@
         <a href="assets/Yiwen_Wang_Resume.pdf" download data-hover="Download Resume"><img src="assets/document.png" alt="Resume"></a>
     </aside>
     <main>
+        <section class="intro">
+            <h1>Projects</h1>
+            <p>Welcome to my project portfolio! Here you'll find a selection of my work that showcases my skills in software development, problem-solving, and innovation. Click on a project to see more details.</p>
+        </section>
 
+        <section class="project-listings">
+            <div class="project-grid">
+                <!-- Project 1 -->
+                <div class="project" data-project="project1">
+                    <h2>Car Sharing Application</h2>
+                    <h3>Hackathon JavaScript Prototype</h3>
+                    <p class="dates">Spring 2023</p>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project" data-project="project2">
+                    <h2>Gesture-based Musical Notation Editor</h2>
+                    <h3>Backend Java Application with GUI</h3>
+                    <p class="dates">Spring 2023</p>
+                </div>
+
+                <!-- Repeat for other projects, replacing content as necessary -->
+                <!-- ... -->
+
+            </div>
+        </section>
     </main>
+
+    <!-- Project Details Modal -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="projectDetails">
+                <!-- Project details will be dynamically loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="js/projects.js"></script>
 </body>
+
 </html>
