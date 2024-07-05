@@ -6,14 +6,14 @@ main {
 }
 
 .intro {
-    text-align: center;
     margin-bottom: 40px;
 }
 
 .intro h1 {
-    font-family: 'Dolce Vita', Arial, sans-serif;
+    font-family: 'YesevaOne-Regular';
     font-size: 2.5em;
     color: rgb(93, 77, 123);
+    margin-bottom: 20px;
 }
 
 .intro p {
@@ -28,26 +28,90 @@ main {
 }
 
 .project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
+    flex-direction: column;
     gap: 20px;
 }
 
 .project {
-    background-color: rgb(230, 203, 115);
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white background */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     transition: transform 0.3s ease;
+    overflow: hidden; /* Ensure the pseudo-element doesn't overflow the project block */
 }
 
 .project:hover {
     transform: scale(1.05);
 }
 
+.project::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%; /* Adjust the width as needed */
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right center;
+    opacity: 0.6; /* Adjust the opacity as needed */
+    z-index: 1; /* Place below the text */
+    pointer-events: none; /* Ensure it doesn't interfere with text interaction */
+}
+
+.project[data-project="project1"]::before {
+    background-image: url('assets/watermark1.png');
+}
+
+.project[data-project="project2"]::before {
+    background-image: url('assets/watermark2.png');
+}
+
+.project[data-project="project3"]::before {
+    background-image: url('assets/watermark3.png');
+}
+
+.project[data-project="project4"]::before {
+    background-image: url('assets/watermark4.png');
+}
+
+.project[data-project="project5"]::before {
+    background-image: url('assets/watermark5.png');
+}
+
+.project[data-project="project6"]::before {
+    background-image: url('assets/watermark6.png');
+}
+
+.project[data-project="project7"]::before {
+    background-image: url('assets/watermark7.png');
+}
+
+.project[data-project="project8"]::before {
+    background-image: url('assets/watermark8.png');
+}
+
+.project[data-project="project9"]::before {
+    background-image: url('assets/watermark9.png');
+}
+
+.project[data-project="project10"]::before {
+    background-image: url('assets/watermark10.png');
+}
+
+.project h2,
+.project h3,
+.project p {
+    position: relative;
+    z-index: 2; /* Place above the pseudo-element */
+}
+
 .project h2 {
-    font-family: 'Dolce Vita', Arial, sans-serif;
+    font-family:'YesevaOne-Regular';
     font-size: 2em;
     color: rgb(93, 77, 123);
 }
@@ -100,6 +164,72 @@ main {
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+.modal-content h2 {
+    font-family: 'Dolce Vita', Arial, sans-serif;
+    color: rgb(93, 77, 123);
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.modal-content h3 {
+    font-family: 'ABeeZee-Regular';
+    color: rgb(93, 77, 123);
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.modal-content .dates {
+    font-style: italic;
+    color: rgb(93, 77, 123);
+    margin-bottom: 20px;
+}
+
+.modal-content .project-overview,
+.modal-content .key-contributions,
+.modal-content .visuals-links {
+    margin-bottom: 20px;
+}
+
+.modal-content .project-overview h4,
+.modal-content .key-contributions h4,
+.modal-content .visuals-links h4 {
+    font-family: 'Dolce Vita', Arial, sans-serif;
+    color: rgb(93, 77, 123);
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.modal-content .project-overview p,
+.modal-content .key-contributions ul,
+.modal-content .visuals-links p {
+    font-family: 'ABeeZee-Regular';
+    color: rgb(93, 77, 123);
+    margin-bottom: 10px;
+}
+
+.modal-content .key-contributions ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.modal-content .visuals-links img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.modal-content .visuals-links a {
+    display: block;
+    font-family: 'ABeeZee-Regular';
+    color: rgb(93, 77, 123);
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.modal-content .visuals-links a:hover {
+    text-decoration: underline;
 }
 
 /* Mobile responsiveness */

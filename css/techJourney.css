@@ -1,0 +1,102 @@
+/* General styles */
+.experience-section {
+    padding: 100px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.experience-section h1 {
+    font-family: 'YesevaOne-Regular', serif;
+    font-size: 2.5em;
+    color: rgb(93, 77, 123);
+    margin-bottom: 40px;
+}
+
+.experience {
+    background-color: rgba(255, 255, 255, 0.3); 
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.experience img.watermark {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: auto;
+    opacity: 0.2;
+    z-index: 1;
+}
+
+.experience h2,
+.experience h3,
+.experience .dates,
+.experience h4,
+.experience ul {
+    position: relative;
+    z-index: 2; /* Place above the watermark image */
+    font-family: 'Times New Roman', serif;
+}
+
+.experience h2 {
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(93, 77, 123);
+}
+
+.experience h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: rgb(93, 77, 123);
+    margin-bottom: 10px;
+}
+
+.experience .dates {
+    font-style: italic;
+    color: rgb(93, 77, 123);
+    margin-bottom: 10px;
+}
+
+.experience h4 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: rgb(93, 77, 123);
+    margin-bottom: 10px;
+}
+
+.experience ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: rgb(93, 77, 123);
+}
+
+.experience ul li {
+    margin-bottom: 10px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .experience-section {
+        padding: 80px 20px;
+    }
+
+    .experience-section h1 {
+        font-size: 2em;
+    }
+
+    .experience h2 {
+        font-size: 1.5em;
+    }
+
+    .experience h3 {
+        font-size: 1.2em;
+    }
+
+    .experience h4 {
+        font-size: 1.2em;
+    }
+}
