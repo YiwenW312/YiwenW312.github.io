@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', function() {
             responsibilities: 'Created functions for computing cell generations, neighbor counting, and cell state transitions.',
             challenges: 'Enhancing user experience with intuitive UI and heatmap visualization.',
             outcomes: 'Successfully developed an engaging and interactive web-based Game of Life.',
-            visuals: 'assets/gameoflife.GIF',
+            visuals: 'assets/gameoflife.gif',
             demoLink: 'https://yiwen-wang-project2.onrender.com/',
             githubLink: 'https://github.com/YiwenW312/Conway-s-Game-of-Life'
         },
