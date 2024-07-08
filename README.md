@@ -2,6 +2,8 @@
 
 This personal website is designed by Yiwen Wang. 
 
+Purple & Gold are UW Husky's colors!
+
 
 If you use my code, please provide my github repo as a reference, thanks!
 
