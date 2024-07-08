@@ -13,6 +13,7 @@
     <header>
         <img src="assets/logo.png" alt="Logo" class="logo">
         <div class="nav-text-container">
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
             <nav>
                 <ul>
                     <li><a href="index.html">Welcome</a></li>
@@ -23,6 +24,7 @@
                     <li><a href="contact.html">contact</a></li>
                 </ul>
             </nav>
+            </div>
         </div>
     </header>
     <aside>
@@ -186,6 +188,12 @@
             </div>
         </section>
     </main>
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('nav');
+            nav.classList.toggle('active');
+        }
+    </script>
 </body>
 
 </html>

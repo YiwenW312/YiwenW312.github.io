@@ -158,6 +158,22 @@ aside a:hover::after {
         display: none;
     }
 
+    header nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    header nav ul li a {
+        padding: 10px;
+        text-align: center;
+        font-size: 1em;
+    }
+
+    header nav.active ul {
+        display: flex;
+    }
+
     .menu-icon {
         display: block;
     }
