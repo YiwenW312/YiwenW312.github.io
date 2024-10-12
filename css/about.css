@@ -137,6 +137,91 @@ h2 {
     color: #5d4d7b;
 }
 
+/* CliftonStrengths Section */
+.strengths-section {
+    padding: 50px 0;
+}
+
+.strength-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.strength-icon {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.strength-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.strength-text {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+    color: #5d4d7b;
+    line-height: 1.5;
+}
+
+.strength-text .highlight {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #5d4d7b;
+}
+
+/* Title matching the other sections */
+.strengths-section h2 {
+    font-size: 1.8em;
+    color: #5d4d7b;
+    text-transform: uppercase;
+    font-family: 'YesevaOne-Regular';
+    margin-bottom: 25px;
+    text-align: center;  /* Align the title to the center as in the previous section */
+}
+
+/* Section content hover effect */
+.strength-item:hover {
+    transform: scale(1.03);
+    transition: transform 0.3s;
+}
+/* Download button styling */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color: #5d4d7b;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #463f5a;
+}
+
+/* Mobile responsiveness for strengths */
+@media (max-width: 768px) {
+    .strength-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .strength-icon {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+}
+
 /* Mobile responsiveness */
 @media (max-width: 768px) {
     .hero-section {
