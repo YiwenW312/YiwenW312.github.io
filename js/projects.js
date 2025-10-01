@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded', function() {
             id: 'project10',
             title: 'Tech@Crossroads Publishing Platform',
             subtitle: 'Full-Stack Web Application',
-            dates: 'Spring 2024 - present',
+            dates: 'Spring 2024',
             overview: 'Led the development of a full-stack publishing platform using JavaScript, React, Express, Node.js, and MongoDB, facilitating content sharing and exploration of interdisciplinary opportunities for Northeastern University Seattle Campus students.',
             role: 'Project Lead & Developer',
             technologies: 'JavaScript, React, Express, Node.js, MongoDB, User Authentication, CSS, HTML, Git, SDLC, Project Management',
@@ -153,6 +153,34 @@ document.addEventListener('DOMContentLoaded', function() {
             visuals: 'assets/1_Homepage_1_all.png',
             demoLink: 'https://github.com/Tech-Crossroads/techCrossroads',
             githubLink: 'https://github.com/Tech-Crossroads/techCrossroads'
+        },
+        {
+            id: 'project11',
+            title: 'VortexFlow',
+            subtitle: 'Scalable Microservices-Based Java CI/CD CLI System',
+            dates: 'Spring 2025',
+            overview: 'vtxflow is a fast and flexible CLI tool for local and remote CI/CD workflows, built by * *Team 5 (Vortex)**. It helps developers efficiently execute, deploy, and monitor pipelines using a simple yet powerful command-line interface.',
+            role: 'Developer',
+            technologies: 'Java, Spring Boot, Docker, PostgreSQL, RESTful APIs, RabbitMQ, MinIO, Git, Microservices, CI/CD, CLI',
+            responsibilities: '•\tDeveloped a scalable CI/CD system using Spring Boot microservices (Backend, Worker, CLI), integrated via HTTP and RabbitMQ to support distributed orchestration, job execution in Docker containers, and artifact storage in MinIO. Built an HTTP-based CLI using Picocli and YAML validation to trigger pipeline runs, resolve job dependencies, and report execution status to PostgreSQL, enabling modular, cloud-ready workflows.',
+            challenges: 'Designing a robust microservices architecture to ensure scalability and reliability in CI/CD workflows.',
+            outcomes: 'Successfully deployed a functional and efficient CI/CD system.',
+            visuals: 'assets/cicd.png',
+            demoLink: 'https://github.com/CS6510-SEA-SP25/t5-cicd/',
+            githubLink: 'https://github.com/CS6510-SEA-SP25/t5-cicd/'
+        },
+        {
+            id: 'project12',
+            title: 'MiniMesh',
+            subtitle: 'Lightweight Service Mesh on Kubernetes with Go and gRPC',
+            dates: 'Fall 2025',
+            overview: 'Design and implement a lightweight service mesh for Kubernetes using Go and gRPC. MiniMesh provides essential features like service discovery, load balancing, and secure communication between microservices, enhancing the reliability and scalability of applications deployed on Kubernetes clusters.',
+            role: 'Developer',
+            technologies: 'Go，gRPC, Kubernetes, Docker, Microservices, Service Mesh, Git',
+            responsibilities: '•\tDesigned and building a Kubernetes-native service mesh with a custom RouteRule CRD, Envoy sidecar injection via mutating webhook, and Go controller for routing and canary rollouts. Implementing observability and testing features including OpenTelemetry logging, Prometheus/Grafana dashboards, and automated performance test integration.',
+            visuals: 'assets/minimesharch.png',
+            demoLink: 'https://github.com/CS7580-SEA-2025/tx-project',
+            githubLink: 'https://github.com/CS7580-SEA-2025/tx-project'
         }
     ];
 
